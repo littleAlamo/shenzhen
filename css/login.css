@@ -32,7 +32,7 @@ body {
 }
 .login-contain {
   height: 100%;
-  background: url("../images/bg.png") center center no-repeat;
+  background: url("../images/login/bg.png") center center no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,9 +47,24 @@ body {
   left: 0;
   transform: translateY(-50%);
 }
+.login-contain .login-main .login-left {
+  padding-top: 150px;
+}
 .login-contain .login-main .login-right {
   padding: 115px 35px 75px;
   width: 575px;
   background: rgba(250, 250, 250, 0.5);
   border-radius: 10px;
+}
+.login-contain .login-main .login-right label {
+  color: #fff;
+}
+.login-contain .login-main .login-right .btn-ding {
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  background: #2490FE;
+  font-size: 28px;
+  padding: 0;
 }
