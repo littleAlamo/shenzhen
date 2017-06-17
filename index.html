@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css">
     <title>Document</title>
 
 </head>
@@ -98,8 +100,8 @@ admin ，欢迎来到后台管理系统
             <div class="main-list-top ">
                 采购管理
             </div>
-            <div class="main-list-bot">
-122
+            <div id="treeDemo" class="main-list-bot ztree">
+
             </div>
         </div>
     </div>
@@ -108,6 +110,27 @@ admin ，欢迎来到后台管理系统
     </div>
 </div>
 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.ztree.all.min.js"></script>
+<script>
 
+    var zTreeObj;
+    // zTree 的参数配置，深入使用请参考 API 文档（setting 配置详解）
+    var setting = {};
+    // zTree 的数据属性，深入使用请参考 API 文档（zTreeNode 节点数据详解）
+    var zNodes = [
+        {name:"test1", open:true, children:[
+            {name:"test1_1"}, {name:"test1_2"}]},
+        {name:"test2", open:true, children:[
+            {name:"test2_1"}, {name:"test2_2"}]}
+    ];
+    zTreeObj = $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+
+
+//滚动条
+    $(".main-list-left").mCustomScrollbar();
+    $("#treeDemo").mCustomScrollbar();
+</script>
 </body>
 </html>
