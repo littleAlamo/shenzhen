@@ -12,7 +12,7 @@ gulp.task('less', function() {
 gulp.task('connect', function() {
     connect.server({
         host: 'localhost', //地址，可不写，不写的话，默认localhost
-        port: 3000, //端口号，可不写，默认8000
+        port: 8000, //端口号，可不写，默认8000
         root: './', //当前项目主目录
         livereload: true //自动刷新
     });
