@@ -1,0 +1,42 @@
+a:focus,
+a:hover{
+    text-decoration: none;
+}
+.fixed-table-loading{
+    display: none;
+}
+
+th{
+    background: #88CCFF;
+    color: #000;
+}
+.list-nav{
+    height: 80px;
+    background: #5CB8FD;
+    line-height: 80px;
+
+    padding-left: 30px;
+
+}
+.list-nav a{
+    overflow: hidden;
+    height: 80px;
+    float: left;
+    display: block;
+    font-size:20px;
+    color: #fff;
+    margin-right: 10px;
+
+}
+.list-nav i{
+    font-size:38px;
+}
+.selpage{
+    padding: 2px 15px;
+    background: #fff;
+    line-height: 15px;
+    float: left;
+    margin-top: 27px;
+    margin-right: 10px;
+    border-radius: 5px;
+}

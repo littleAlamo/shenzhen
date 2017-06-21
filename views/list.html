@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/iconfont.css">
     <link rel="stylesheet" href="../css/list.css">
     <link rel="stylesheet" href="../css/bootstrap-editable.css">
+    <link rel="stylesheet" href="../css/bootstrap-table.min.css">
 
     <title>Document</title>
 </head>
@@ -21,16 +22,22 @@
         <i class="iconfont icon-xiayiqu1"></i>
     </a>
     <a href="javascript:;">
-        <i class="iconfont icon-xiayiqu1"></i>
+        <i class="iconfont icon-houtui"></i>
     </a>
     <a href="javascript:;">
         1/18
     </a>
     <a href="javascript:;">
-        <i class="iconfont icon-xiayiqu1"></i>
+        <i class="iconfont icon-qianjin"></i>
     </a>
     <a href="javascript:;">
-        <i class="iconfont icon-xiayiqu1"></i>
+        <i class="iconfont icon-shangyiqu"></i>
+    </a>
+    <span class="selpage">
+        1
+    </span>
+    <a href="javascript:;">
+        <i class="iconfont icon-qianjin"></i>
     </a>
     <a href="javascript:;">
         <i class="iconfont icon-xinzeng"></i>
@@ -40,22 +47,30 @@
     </a>
 </div>
 
-    <table id="editable"  >
+    <table id="editable">
 
 
     </table>
 
 
+
+
+
+
+
+
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/bootstrap-table-editable.js"></script>
+<script src="../js/bootstrap-editable.min.js"></script>
 <script src="../js/bootstrap-table.min.js"></script>
 <script src="../js/bootstrap-table-zh-CN.min.js"></script>
+<script src="../js/bootstrap-table-editable.js"></script>
 <script>
 
     $("#editable").bootstrapTable({
         sortable:false,
         pagination:false,
+        clickToSelect: false,
 
         columns: [{
             field: 'a',
@@ -74,7 +89,7 @@
                 type: 'text',
                 title: '单据状态',
                 validate: function (v) {
-                    if (!v) return '用户名不能为空';
+                    if (!v) return '单据状态不能为空';
 
                 }
             }
@@ -96,9 +111,9 @@
             align: 'center'
         }],
         data: [{
-            a:'21',
-            b:'2133',
-            c:'asad'
+            a:'anasd',
+            b:'adsd',
+            c:'csasd'
 
         },
             {
